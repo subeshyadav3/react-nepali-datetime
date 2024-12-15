@@ -1,0 +1,68 @@
+.calendarContainer {
+  margin-top: 16px;
+  color: #666;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendarCell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+
+  /* disable text selection */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.calendarCellInactive {
+  opacity: 0.5;
+}
+
+.calendarCell:not(.calendarCellInactive) {
+  cursor: pointer;
+}
+
+.calendarCellCurrent {
+  color: #9325b1;
+  font-weight: bold;
+}
+
+.calendarCellSelected {
+  position: relative;
+  color: white;
+  z-index: 1;
+  &::after {
+    content: '';
+    background-color: #2096f5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.prevNext {
+  width: 22px;
+  height: 22px;
+  span{
+    cursor: pointer;
+  }
+}
+
+.calendarControls {
+  display: flex;
+  justify-content: space-between;
+}
