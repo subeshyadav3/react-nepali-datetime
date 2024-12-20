@@ -16,7 +16,7 @@ npm install react-nepali-datetime
 or
 
 ```bash
-yarm add react-nepali-datetime
+yarn add react-nepali-datetime
 ```
 
 ## Usage
