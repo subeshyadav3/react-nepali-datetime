@@ -1,74 +1,100 @@
-## Contributing Guide
+# Contributing Guide
 
-Thank you for your interest in contributing to the react-nepali-datetime project! Your contributions will help improve and enhance this library. Please take a moment to review the guidelines before getting started.
+Thank you for your interest in contributing to the **react-nepali-datetime** project!
+Your contributions will help improve and enhance this library.
+Please take a moment to review the following guidelines before getting started.
 
-### Prerequisites
+## Prerequisites
 
-Before you start contributing, please ensure that you have the following prerequisites:
+Before contributing, ensure that you have the following:
 
-- Node.js 18 or higher installed on your machine. You can download it from the [official Node.js website](https://nodejs.org/en/). Alternatively, you can use [nvm](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions.
+- **Node.js v18 or higher** installed. Download it from the [official Node.js website](https://nodejs.org/)
+  or use `nvm` to manage multiple Node.js versions.
+- **npm** installed (comes with Node.js).
 
-### Getting Started
+## Getting Started
 
 To set up the project on your local machine, follow these steps:
 
-1. Clone the repository.
-2. Navigate to the cloned repository:
+1. **Fork** the repository on GitHub.
+2. **Clone** the forked repository to your local machine:
 
-```bash
-cd react-nepali-datetime
-```
+   ```bash
+   git clone https://github.com/<your-username>/react-nepali-datetime.git
+   cd react-nepali-datetime
+   ```
 
-3. Install project dependencies:
+3. **Install dependencies**:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-4. Start the development server:
+4. **Verify your setup**:
 
-```bash
-npm run dev
-```
+   - Start the development server:
 
-5. Build the project for production:
+     ```bash
+     npm run dev
+     ```
 
-```bash
-npm run build
-```
+   - Run lint checks::
 
-6. Run lint checks:
+     ```bash
+     npm run test
+     ```
 
-```bash
-npm run lint
-```
+   - Build the project for production:
 
-### Pull Requests
+     ```bash
+     npm run build
+     ```
 
-We welcome and appreciate pull requests from the community. If you have any improvements, bug fixes, or new features to contribute, please follow these steps:
+5. **Start contributing** by making the necessary changes to the codebase.
 
-1. Fork the repository and create a new branch based on the `main` branch.
+## Pull Requests
 
-1. Write tests for your changes if applicable.
+We welcome and appreciate pull requests from the community. To contribute:
 
-1. Commit your changes using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).  
-   Examples: `feat: add JSON parser`, `feat(parser): add JSON parser`.
+1. **Fork** the repository and create a new branch based on the `main` branch:
 
-1. Push your branch to your forked repository.
+   ```bash
+   git checkout -b <your-branch-name>
+   ```
 
-1. Create a pull request from your branch to the `main` branch of the original repository.
+2. **Write tests** for your changes if applicable.
+3. **Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)** for commit messages.  
+   Examples:
 
-1. Provide a clear and concise description of your changes in the pull request, along with any additional context or information that may be useful.
+   - `feat: add JSON parser`
+   - `fix(parser): resolve parsing issue`
 
-1. Participate in the code review process and address any feedback or suggestions.
+4. **Push** your branch to your forked repository:
 
-### License
+   ```bash
+   git push origin <your-branch-name>
+   ```
 
-By contributing to this project, you agree that your contributions will be licensed under the GPL-3.0 License. For more details, please see the [LICENSE](./LICENSE) file.
+5. **Create a Pull Request**:
 
-## Other help
+   - Open a pull request from your branch to the `main` branch of the original repository.
+   - Provide a clear and concise description of the changes, along with relevant context.
 
-You can contribute by spreading a word about this library.
-It would also be a huge contribution to write
-a short article on how you are using this project.
-You can also share your best practices with us.
+6. **Review & Feedback**:
+
+   - Participate in the code review process and address any feedback promptly.
+
+## License
+
+By contributing to this project, you agree that your contributions will be licensed under the **GPL-3.0 License**.  
+Refer to the [LICENSE](./LICENSE) file for more details.
+
+## Other Ways to Contribute
+
+Even if you don’t contribute code, you can still help:
+
+- **Spread the word** about this library.
+- Write a blog or article about how you use this project.
+- Share your best practices, examples, or ideas with us.
+
+Thank you for contributing to **react-nepali-datetime**! 🎉
