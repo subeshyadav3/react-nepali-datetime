@@ -1,11 +1,13 @@
+import React from 'react'
+import styles from './YearMonthSelector.module.scss'
 import {
   DEFAULT_LOCALE,
   LOCALE_NE,
   MAX_NEPALI_YEAR,
   MIN_NEPALI_YEAR,
-} from '../../constants'
-import { Locale } from '../../types'
-import { nepaliNumber } from '../../utils/nepaliNumber'
+} from '../../../constants'
+import { Locale } from '../../../types'
+import { nepaliNumber } from '../../../utils/nepaliNumber'
 
 const YEARS = Array.from(
   { length: MAX_NEPALI_YEAR - MIN_NEPALI_YEAR + 1 },
@@ -26,6 +28,7 @@ const YearSelector: React.FC<IYearSelectionProps> = ({
   <select
     value={selectedYear}
     onChange={e => onYearChange && onYearChange(Number(e.target.value))}
+    className={styles.selector}
   >
     {YEARS.map(year => (
       <option key={year} value={year}>

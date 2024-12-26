@@ -1,0 +1,26 @@
+.selector {
+  background-color: #fff;
+  color: black;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: #2096f5;
+}
+
+.selector:focus {
+  outline: none;
+}
+
+.selector::-webkit-scrollbar {
+  width: 6px;
+}
+
+.selector::-webkit-scrollbar-thumb {
+  background-color: #2096f5;
+  border-radius: 4px;
+}
+
+.selector::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
